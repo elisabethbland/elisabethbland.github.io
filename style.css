@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css?family=Gotu&display=swap');
+
+body {
+    background: rgb(173, 214, 240);
+    box-sizing: border-box;
+    font-family: 'Gotu', sans-serif;
+    height: 100vh;
+}
+
+p {
+  font-size: 1.75rem;
+}
+  
+header {
+    /* border: 1px solid black; */
+    height: 30vh;
+    margin: 10px;
+    box-sizing: border-box;
+    background: url(/images/pawel-czerwinski-OY3slACa3ec-unsplash.jpg)  center  #43464b;
+    background-size: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+      
+}
+.topbutton {
+    background-color: purple;
+    font-size: 14px;
+    border-radius: 5px;
+    border-color:purple;
+    color: white;
+    padding: 5px 25px;
+    margin: 0 auto;
+    justify-content: center;
+}
+header h2 {
+  font-size: 42px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+}
+ .quote {
+  font-style: italic;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 20px;
+  color: darkslategray;
+ } 
+
+
+.b {
+    /* border: 1px solid black; */
+    height: 30vh;
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.sub-wrapper {
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;   
+    border-top: 3px purple double;
+    justify-content: space-evenly;
+    
+     
+}
+.c {
+    flex-basis: 25%;
+    box-sizing: border-box;
+    margin: 1%;
+    text-align: center;
+    min-width: 200px;
+    min-height: 200px;  
+    background-image: url("images/IMG_8521.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    position: relative;
+}
+.d{
+  flex-basis: 25%;
+  box-sizing: border-box;
+  margin: 1%;
+  text-align: center;
+  min-width: 200px;
+  min-height: 200px; 
+  background-image: url("images/IMG_8524.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.e {
+  flex-basis: 25%;
+  box-sizing: border-box;
+  margin: 1%;
+  text-align: center;
+  min-width: 200px;
+  min-height: 200px; 
+  background-image: url("images/IMG_8526.jpg");
+  background-position: center; 
+  background-size: cover;
+  position: relative;
+
+}
+.f {
+  flex-basis: 25%;
+  box-sizing: border-box;
+  margin: 1%;
+  text-align: center;
+  min-width: 200px;
+  min-height: 200px; 
+  background-image: url("images/IMG_8528.jpg");
+  background-position: center; 
+  background-size: cover;
+  position: relative;
+}
+
+
+
+.main-wrapper {
+    box-sizing: border-box;
+    
+}
+.container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    justify-content: center;
+
+
+}
+
+.footer {
+      box-sizing: border-box;
+      display: flex;
+      flex-shrink: 0;
+      justify-content: space-around;
+      padding: 10px 40px;
+      /* border: 1px solid black; */
+      
+}
+  
+a {
+      color: blueviolet;
+      transition: animated bounce;
+}
+
+a:hover {
+      text-decoration: none;
+}
+
+
+.main-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: darkslategray;
+}
+
+button {
+  background-color: purple;
+  font-size: 14px;
+  border-radius: 5px;
+  border-color:purple;
+  color: white;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  align-self: center;
+}
+
+.logo {
+  max-width: 60px;
+  align-self: initial;
+  display: flex;
+
+}
+
+.footer-link {
+  font-size: .9rem;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+}
+
+.modal-content {
+  background-color: skyblue;
+  margin: 20% auto; 
+  padding: 15px;
+  border: 3px solid purple;
+  width: 80%;
+  display: flex;
+  flex-direction: row-reverse;
+  box-sizing: border-box;
+}
+
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+
+.close:hover,
+.close:focus {
+  color: purple;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-text {
+  font-size: 1.1rem;
+}
+
+.c .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: purple;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 105%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.c .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: purple transparent transparent transparent;
+}
+.c:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.d .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: purple;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 105%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.d .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: purple transparent transparent transparent;
+}
+.d:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.e .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: purple;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 105%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.e .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: purple transparent transparent transparent;
+}
+.e:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.f .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: purple;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 105%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.f .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: purple transparent transparent transparent;
+}
+.f:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+
+
+@media (min-width: 1150px) {
+   html {
+    position: relative;
+   }
+    .container {
+      display: flex;
+      height: 80vh;
+    }
+    .a {
+      height: 20vh;
+      }
+  .b {
+    height: 18vh;
+  }
+  .sub-wrapper {
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    border-bottom: 3px purple double;
+    
+  }
+  .c, .d, .e, .f {
+    flex-basis: 20%;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  
+  button {
+    align-self: center;
+    display: flex;
+    
+  }
+ 
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .modal-content {
+    background-color: skyblue;
+    margin: 10% auto; 
+    padding: 15px;
+    border: 3px solid purple;
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+  }
+}
+
+ 

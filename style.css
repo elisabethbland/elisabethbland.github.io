@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Gotu&display=swap');
 
 body {
-    background: rgb(173, 214, 240);
+    background: #365656;
     box-sizing: border-box;
     font-family: 'Gotu', sans-serif;
-    height: 100vh;
+    height: 90vh;
 }
 
 p {
@@ -13,10 +13,10 @@ p {
   
 header {
     /* border: 1px solid black; */
-    height: 40vh;
+    height: 30vh;
     margin: 10px;
     box-sizing: border-box;
-    background: url(/images/pawel-czerwinski-OY3slACa3ec-unsplash.jpg)  center  #43464b;
+    background: url(/images/abyan-athif-K0U0eSAjFGU-unsplash.jpg)  center  #43464b;
     background-size: center;
     text-align: center;
     display: flex;
@@ -24,18 +24,18 @@ header {
       
 }
 .topbutton {
-    background-color: purple;
+    background-color: #614344;
     font-size: 14px;
     border-radius: 5px;
-    border-color:purple;
-    color: white;
+    border-color:#614344;
+    color: #CBD2D0;
     padding: 5px 25px;
     margin: 0 auto;
     justify-content: center;
 }
 header h2 {
   font-size: 42px;
-  color: white;
+  color: #324F4F;
   text-align: center;
   margin: 0 auto;
   padding-bottom: 30px;
@@ -44,16 +44,17 @@ header h2 {
 h1{
     font-size: 24px;
     font-weight: 800;
-    color: white;
+    color: #CBD2D0;
     text-align: left;
     margin-left: 20px;
 }
  .quote {
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
   margin: 20px;
-  color: darkslategray;
+  color: #CBD2D0;
+  
  } 
 
 
@@ -70,15 +71,15 @@ h1{
     
     align-items: center;
     display: flex;
-    flex-direction: column;
-    height: 50vh;
+    flex-direction: row;
+    height: 55vh;
     box-sizing: border-box;
     padding-bottom: 10px;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;   
-    /* border-top: 3px purple double; */
     justify-content: space-evenly;
+    width: 100%;   
+    /* border-top: 3px purple double; */
+   
     
      
 }
@@ -94,7 +95,14 @@ h1{
     background-size: cover;
     display: flex;
     position: relative;
+    transition: .5s ease;
 }
+
+.c:hover {
+transform: scale(.8);
+transition: .5s ease;
+}
+
 .d{
   flex-basis: 25%;
   box-sizing: border-box;
@@ -106,6 +114,12 @@ h1{
   background-position: center;
   background-size: cover;
   position: relative;
+  transition: .5s ease;
+}
+
+.d:hover {
+transform: scale(.8);
+transition: .5s ease;
 }
 .e {
   flex-basis: 25%;
@@ -118,8 +132,14 @@ h1{
   background-position: center; 
   background-size: cover;
   position: relative;
-
+  transition: .5s ease;
 }
+
+.e:hover {
+transform: scale(.8);
+transition: .5s ease;
+}
+
 .f {
   flex-basis: 25%;
   box-sizing: border-box;
@@ -131,18 +151,26 @@ h1{
   background-position: center; 
   background-size: cover;
   position: relative;
+  transition: .5s ease;
+}
+
+.f:hover {
+transform: scale(.8);
+transition: .5s ease;
 }
 
 
 
 .main-wrapper {
     box-sizing: border-box;
+    height: 100%;
     
 }
 .container {
     box-sizing: border-box;
     margin: 0 auto;
     justify-content: center;
+    height: 100%;
 
 
 }
@@ -150,15 +178,37 @@ h1{
 .footer {
       box-sizing: border-box;
       display: flex;
-      flex-shrink: 0;
-      justify-content: space-around;
-      padding: 10px 40px;
-      /* border: 1px solid black; */
-      
+      height: 8vh;
+      justify-content: space-evenly;
+      /* padding: 10px 40px; */
+     
+}
+.img-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.bigger {
+  max-width: 450px;
+  max-height: 600px;
+  align-self: center;
+  padding-top: 20px;
+}
+
+.bigger-text {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5%;
+  color:#CBD2D0;
+}
+
+.back {
+text-align: center;
+margin: 15px;
 }
   
 a {
-      color: blueviolet;
+      color: #CBD2D0;
       transition: animated bounce;
 }
 
@@ -170,32 +220,32 @@ a:hover {
 .main-text {
   text-align: center;
   font-size: 1.2rem;
-  color: darkslategray;
+  color: #CBD2D0;
 }
 
 button {
-  background-color: purple;
+  background-color: #614344;
   font-size: 14px;
   border-radius: 5px;
-  border-color:purple;
-  color: white;
+  border-color: #614344;
+  color: #CBD2D0;
   padding: 5px 25px;
   box-sizing: border-box;
   margin: 0 auto;
-  align-self: center;
 }
 
 .logo {
   max-width: 60px;
   align-self: initial;
   display: flex;
+  max-height: 50px;
 
 }
 
 .footer-link {
   font-size: .9rem;
+  color: #CBD2D0;
 }
-
 
 .modal {
   display: none; 
@@ -209,18 +259,19 @@ button {
 }
 
 .modal-content {
-  background-color: skyblue;
+  background-color: #7F9393;
   margin: 20% auto; 
   padding: 15px;
-  border: 3px solid purple;
+  border: 3px solid #614344;
   width: 80%;
   display: flex;
   flex-direction: row-reverse;
   box-sizing: border-box;
+  color: #2D4747;
 }
 
 .close {
-  color: #aaa;
+  color: #CBD2D0;
   font-size: 28px;
   font-weight: bold;
   padding-left: 25px;
@@ -229,7 +280,7 @@ button {
 
 .close:hover,
 .close:focus {
-  color: purple;
+  color: #614344;
   text-decoration: none;
   cursor: pointer;
 }
@@ -238,172 +289,93 @@ button {
   font-size: 1.1rem;
 }
 
-.c .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: purple;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  bottom: 105%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
+
+
+
+
+@media (min-width: 768px) {
+  .b {
+    height: 18vh;
+  }
+
+.sub-wrapper {
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  /* border-bottom: 3px purple double;
+  border-top: 3px purple double; */
+  flex-wrap: wrap;
+  
 }
-
-
-.c .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: purple transparent transparent transparent;
+.c, .d, .e, .f {
+  flex-basis: 18%;
+  box-sizing: border-box;
+  justify-content: center;
+  min-width: 250px;
+  min-height: 250px; 
+  padding: 5px;
 }
-.c:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+.bigger {
+  max-width: 800px;
+  max-height: 800px;
+  align-self: center;
+  padding: 15px;
 }
-
-.d .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: purple;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  bottom: 105%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
 }
-
-
-.d .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: purple transparent transparent transparent;
-}
-.d:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-
-.e .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: purple;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  bottom: 105%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-
-.e .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: purple transparent transparent transparent;
-}
-.e:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-.f .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: purple;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  bottom: 105%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-
-.f .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: purple transparent transparent transparent;
-}
-.f:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
+@media (min-width: 1100px) {
+  .c, .d, .e, .f {
+    flex-basis: 50%;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    min-width: 300px;
+    min-height: 300px; 
+    margin: 5px;
+    flex-wrap: wrap;
+  }
 
 
 
-
-
-
-@media (min-width: 1150px) {
+@media (min-width: 1450px) {
    html {
     position: relative;
    }
     .container {
       display: flex;
-      height: 80vh;
+      height: 40vh;
     }
     .a {
-      height: 20vh;
+      height: 10vh;
       }
   .b {
-    height: 18vh;
+    height: 15vh;
   }
   .sub-wrapper {
-    height: 50%;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
-    box-sizing: border-box;
-    border-bottom: 3px purple double;
-    border-top: 3px purple double;
-    
+    box-sizing: border-box;  
   }
+  .bigger {
+    max-width: 900px;
+    max-height: 800px;
+    align-self: center;
+    padding: 5px;
+  }
+
+  .bigger-text {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2%;
+  }
+
   .c, .d, .e, .f {
     flex-basis: 20%;
     box-sizing: border-box;
     justify-content: space-evenly;
-    text-align: center;
+    min-width: 350px;
+    min-height: 350px; 
+    margin: 5px;
   }
   
   button {
@@ -419,17 +391,17 @@ button {
     width: 100%;
     text-align: center;
     box-sizing: border-box;
+    height: 7vh;
   }
   .modal-content {
-    background-color: skyblue;
+    background-color: #7F9393;
     margin: 10% auto; 
     padding: 15px;
-    border: 3px solid purple;
+    border: 3px solid #614344;
     width: 50%;
     display: flex;
     flex-direction: row-reverse;
     box-sizing: border-box;
   }
 }
-
- 
+}

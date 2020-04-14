@@ -355,7 +355,7 @@ button {
     box-sizing: border-box;  
     width: 60%;   
     margin: 0 auto;
-  }
+  }}
 
 
 
@@ -428,5 +428,4 @@ button {
     flex-direction: row-reverse;
     box-sizing: border-box;
   }
-}
-}
+}}

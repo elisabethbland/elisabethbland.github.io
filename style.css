@@ -4,16 +4,16 @@ body {
     background: #365656;
     box-sizing: border-box;
     font-family: 'Gotu', sans-serif;
-    height: 90vh;
+    height: 100%;
 }
 
 p {
-  font-size: 1.75rem;
+  font-size: 1.7rem;
 }
   
 header {
     /* border: 1px solid black; */
-    height: 30vh;
+    height: 25vh;
     margin: 10px;
     box-sizing: border-box;
     background: url(/images/abyan-athif-K0U0eSAjFGU-unsplash.jpg)  center  #43464b;
@@ -29,16 +29,16 @@ header {
     border-radius: 5px;
     border-color:#614344;
     color: #CBD2D0;
-    padding: 5px 25px;
+    padding: 5px 20px;
     margin: 0 auto;
     justify-content: center;
 }
 header h2 {
-  font-size: 42px;
+  font-size: 30px;
   color: #324F4F;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 h1{
@@ -50,31 +50,29 @@ h1{
 }
  .quote {
   font-style: italic;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
-  margin: 20px;
+  /* margin: 20px; */
   color: #CBD2D0;
-  
  } 
 
 
 .b {
     /* border: 1px solid black; */
-    height: 30vh;
-    margin: 10px;
+    height: 25vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 .sub-wrapper {
     
     align-items: center;
     display: flex;
     flex-direction: row;
-    height: 55vh;
+    height: 65vh;
     box-sizing: border-box;
-    padding-bottom: 10px;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 90%;   
@@ -179,7 +177,7 @@ transition: .5s ease;
 .footer {
       box-sizing: border-box;
       display: flex;
-      height: 8vh;
+      height: 2vh;
       justify-content: space-evenly;
       /* padding: 10px 40px; */
      
@@ -220,8 +218,9 @@ a:hover {
 
 .main-text {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   color: #CBD2D0;
+  margin-bottom: 15px;
 }
 
 button {
@@ -319,16 +318,16 @@ button {
   justify-content: space-around;
   box-sizing: border-box;
   flex-wrap: wrap;
-  width: 70%;   
+  width: 60%;   
   margin: 0 auto;
   
 }
 .c, .d, .e, .f {
-  flex-basis: 18%;
+  flex-basis: 20%;
   box-sizing: border-box;
   justify-content: center;
-  min-width: 250px;
-  min-height: 250px; 
+  min-width: 200px;
+  min-height: 200px; 
   padding: 5px;
 }
 .bigger {
@@ -343,8 +342,8 @@ button {
     flex-basis: 20%;
     box-sizing: border-box;
     justify-content: space-evenly;
-    min-width: 300px;
-    min-height: 300px; 
+    max-width: 200px;
+    max-height: 200px; 
     margin: 5px;
     flex-wrap: wrap;
   }
@@ -353,9 +352,14 @@ button {
     display: flex;
     justify-content: space-evenly;
     box-sizing: border-box;  
-    width: 60%;   
+    width: 80%;   
     margin: 0 auto;
-  }}
+  }
+
+header h2 {
+  font-size: 2.2rem;
+}
+}
 
 
 
@@ -427,5 +431,8 @@ button {
     display: flex;
     flex-direction: row-reverse;
     box-sizing: border-box;
+  }
+  header h2 {
+    font-size: 2.2rem;
   }
 }}
